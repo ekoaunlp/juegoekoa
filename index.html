@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Página HTML5</title>
+    <style>
+        /* Un poco de CSS básico para dar estilo */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header, main, footer {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 { color: #0056b3; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado principal de la página -->
+    <header>
+        <h1>Mi Primera Página Web</h1>
+        <p>Un ejemplo sencillo que demuestra la estructura de HTML5.</p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de texto e imágenes -->
+        <section>
+            <h2>Sobre este proyecto</h2>
+            <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web.</p>
+            
+            <h3>Imagen de ejemplo:</h3>
+            <img src="https://via.placeholder.com/600x200" alt="Imagen de ejemplo" style="max-width: 100%; height: auto;">
+        </section>
+
+        <!-- Sección de listas y enlaces -->
+        <section>
+            <h2>Tecnologías Web Básicas</h2>
+            <ul>
+                <li><strong>HTML:</strong> Estructura el contenido.</li>
+                <li><strong>CSS:</strong> Aplica estilos y diseño visual.</li>
+                <li><strong>JavaScript:</strong> Añade interactividad y lógica.</li>
+            </ul>
+
+            <p>Puedes aprender más en la <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>.</p>
+        </section>
+
+        <!-- Sección de Tabla -->
+        <section>
+            <h2>Tabla de Lenguajes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lenguaje</th>
+                        <th>Tipo</th>
+                        <th>Uso Principal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Marcado</td>
+                        <td>Estructura Web</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Estilos</td>
+                        <td>Diseño Web</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Programación</td>
+                        <td>Interactividad</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de Formulario -->
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                </div>
+                <br>
+                <div>
+                    <label for="email">Correo Electrónico:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+                <br>
+                <div>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 - Creado con fines educacionales.</p>
+    </footer>
+
+</body>
+</html>
